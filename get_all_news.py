@@ -1,6 +1,7 @@
 from webapp import create_app
-from webapp.news_python import python_news_func
+from webapp.news.parsers import habr
 
 app = create_app()
 with app.app_context():
-    python_news_func()
+    # habr.habr_news_func()
+    habr.habr_news_content()
